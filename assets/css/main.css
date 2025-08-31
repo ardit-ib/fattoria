@@ -804,6 +804,11 @@ section,
   overflow: hidden;
 }
 
+spline-viewer {
+  pointer-events: auto; /* allow touch interaction */
+  touch-action: none;   /* avoid scrolling conflicts */
+}
+
 /* Optional overlay for readability */
 .hero::before {
   content: "";
